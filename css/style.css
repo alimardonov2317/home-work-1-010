@@ -1,0 +1,141 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* global css */
+.container {
+   max-width: 1180px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 16px;
+}
+
+img {
+   max-width: 100%;
+}
+a {
+   color: inherit;
+   text-decoration: inherit;
+}
+li {
+   list-style: none;
+}
+/* Header */
+.header {
+   width: 100%;
+}
+.navbar {
+   display: flex;
+   width: 100%;
+   height: 50px;
+   background: white;
+   align-items: center;
+   gap: 15px;
+}
+.navbar__logo img {
+   width: 35px;
+}
+.navbar__collection {
+   display: flex;
+   flex: 1;
+   gap: 10px;
+}
+.navbar__item {
+   background-color: #f4f4f4;
+   padding: 5px 15px;
+   border-radius: 50px;
+   transition: 0.3s;
+}
+.navbar__item:hover {
+   background-color: #bfdbd2;
+   transition: 0.5s ease-in-out;
+}
+.active {
+   background-color: #006f4c;
+   color: white;
+}
+.active:hover {
+   background-color: #006f4c;
+}
+.navbar__btn {
+   background-color: #ff002b;
+   color: white;
+   padding: 8px 18px;
+   font-size: 16px;
+   border: none;
+   border-radius: 50px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.navbar__btn:hover {
+   padding: 8px 25px;
+   transition: 0.5s;
+}
+.title {
+   font-size: 20px;
+   font-weight: 600;
+   padding: 15px 0;
+}
+
+/* Main */
+
+.main {
+   width: 100%;
+   min-height: 100vh;
+   background: #fbfbfc;
+   margin-bottom: 50px;
+}
+.wrapper {
+   display: flex;
+   gap: 15px;
+   row-gap: 35px;
+   flex-wrap: wrap;
+}
+.card {
+   width: 272px;
+   background-color: white;
+   padding: 15px;
+   border-radius: 15px;
+   box-shadow: 5px 2px 30px hsla(257, 8%, 83%, 0.3);
+   cursor: pointer;
+   transition: 0.3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card:hover {
+   transform: scale(1.02);
+   transition: 0.3s;
+}
+.card__title {
+   font-size: 19px;
+   font-weight: 700;
+}
+.card__desc {
+   font-size: 14px;
+   margin: 8px 0;
+}
+
+.card__price {
+   align-items: center;
+   gap: 10px;
+}
+.card__org-price {
+   text-decoration: line-through red;
+   color: #8d8d8d;
+   font-size: 17px;
+}
+.card__sale {
+   background-color: #ff002b;
+   color: white;
+   padding: 5px 12px;
+   border-radius: 50px;
+   font-weight: 600;
+}
+.card__sale-price {
+   font-size: 19px;
+   font-weight: 700;
+}

@@ -1,0 +1,1 @@
+Ushbu loyihada Belissimo saytining header va cardlar qismi html va css yordamida yozilgan.
